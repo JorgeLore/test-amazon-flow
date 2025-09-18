@@ -1,0 +1,8 @@
+playwright
+fastapi
+uvicorn
+requests
+python-dotenv
+pytest-playwright
+pydantic
+pydantic[email]
