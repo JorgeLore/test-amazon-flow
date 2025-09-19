@@ -3,6 +3,7 @@ from fastapi import FastAPI, Request
 from automation.amazon_flow import run_amazon_flow
 import logging
 
+# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -10,12 +11,15 @@ logging.basicConfig(
     filemode="w"
 )
 
+# Initialize FastAPI app
 app = FastAPI(title="Amazon Bot")
 
+# Test Endpoint
 @app.get("/")
 def hello_world():
-    return {"hola": "mundo"}
+    return {"hello": "world"}
 
+# Main Endpoint for Amazon flow
 @app.post("/simulate-amazon-flow")
 async def simulate_amazon_flow(request: Request):
     logging.info("Call API")
@@ -23,7 +27,7 @@ async def simulate_amazon_flow(request: Request):
     try:
         result = await run_amazon_flow(
             email=data.get("email"),
-            password=data.get("correo"),
+            password=data.get("password"),
             mode=data.get("headless")
         )
         return {"status": "success", "details": result}
