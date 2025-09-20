@@ -1,3 +1,4 @@
+# Validate the data input
 from pydantic import BaseModel, EmailStr
 
 class PurchaseRequest(BaseModel):
