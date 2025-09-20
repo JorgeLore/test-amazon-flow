@@ -30,4 +30,3 @@ async def simulate_amazon_flow(data: PurchaseRequest):
     except Exception as e:
         logging.error(f"Simulation Error: {str(e)}")
         raise HTTPException(status_code=500, detail="Purchase simulation error")
-        
