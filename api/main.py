@@ -19,7 +19,7 @@ def hello_world():
 # Main Endpoint for Amazon flow
 @app.post("/simulate-amazon-flow")
 async def simulate_amazon_flow(data: PurchaseRequest):
-    logging.info("Call API")
+    logging.info("Calling API ...")
     try:
         result = await run_amazon_flow(
             email=data.email,
