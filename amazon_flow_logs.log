@@ -1,5 +1,11 @@
-2025-09-19 18:28:29,800 - INFO - Call API
-2025-09-19 18:28:29,800 - INFO - Starting Amazon flow
-2025-09-19 18:28:39,065 - INFO - 'Ver opciones' button not present
-2025-09-19 18:28:40,004 - INFO - Extra warranty not available
-2025-09-19 18:28:43,710 - INFO - Flow fully completed
+2025-09-20 09:55:07,815 - INFO - Calling API ...
+2025-09-20 09:55:07,816 - INFO - Starting Amazon flow for pythontest881@gmail.com in False headless mode
+2025-09-20 09:55:17,859 - INFO - 'Ver opciones' button not present
+2025-09-20 09:55:18,755 - INFO - 'No, gracias' button not present
+2025-09-20 09:55:21,647 - INFO - Flow fully completed
+2025-09-20 09:55:21,899 - INFO - Calling API ...
+2025-09-20 09:55:21,900 - INFO - Starting Amazon flow for pythontest881@gmail.com in True headless mode
+2025-09-20 09:55:23,607 - INFO - 'Continuar a Compras' button not present
+2025-09-20 09:55:30,016 - INFO - 'Ver opciones' button not present
+2025-09-20 09:55:30,889 - INFO - 'No, gracias' button not present
+2025-09-20 09:55:32,885 - INFO - Flow fully completed

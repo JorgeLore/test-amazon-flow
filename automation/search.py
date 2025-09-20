@@ -1,12 +1,8 @@
-import logging
+from automation.utils import click_if_visible, wait_for_button_and_clic
 
 async def search_amazon(page):
     # 2. Search TV
-    boton = page.get_by_role("button", name="Abrir el menú de Todas las")
-    await boton.wait_for(state="visible")
-    await boton.hover()
-    await page.wait_for_timeout(500)
-    await boton.click()
+    await wait_for_button_and_clic(page, "Abrir el menú de Todas las")
     
     await page.get_by_role("button", name="Electrónicos").click()
     await page.get_by_role("link", name="Televisión y Video").nth(1).click()

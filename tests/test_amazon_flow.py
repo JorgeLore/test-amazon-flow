@@ -1,18 +1,22 @@
 # perform API testing
+from config.settings import settings
 import requests
-import os
-from dotenv import load_dotenv
+import pytest
 
-load_dotenv()
+@pytest.mark.parametrize("mode", [False, True])
+def test_simulate_purchase(mode):
+    payload = {
+            "email": settings.AMAZON_EMAIL,
+            "password": settings.AMAZON_PASSWORD,
+            "headless": mode
+        }
 
-API_URL = os.getenv("API_URL")
-
-payload = {
-        "email": os.getenv("AMAZON_EMAIL"),
-        "password": os.getenv("AMAZON_PASSWORD"),
-        "headless": False
-    }
-
-response = requests.post(API_URL, json=payload)
-
-print(f"{response.status_code}")
+    response = requests.post(settings.API_URL, json=payload)
+    
+    # Verify status response code
+    assert response.status_code == 200, f"Error HTTP: {response.status_code}"
+    
+    # Verify checkout
+    data = response.json()
+    assert data["status"] == "success"
+    assert "Finalizar la compra de manera segura" in data["details"]
