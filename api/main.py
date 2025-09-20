@@ -1,15 +1,12 @@
 # Script for the API
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, HTTPException
 from automation.amazon_flow import run_amazon_flow
+from config.data_model import PurchaseRequest
+from config.logger import setup_logger
 import logging
 
-# Logging configuration
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    filename="log.log",
-    filemode="w"
-)
+# Initialize logger
+setup_logger()
 
 # Initialize FastAPI app
 app = FastAPI(title="Amazon Bot")
@@ -21,15 +18,16 @@ def hello_world():
 
 # Main Endpoint for Amazon flow
 @app.post("/simulate-amazon-flow")
-async def simulate_amazon_flow(request: Request):
+async def simulate_amazon_flow(data: PurchaseRequest):
     logging.info("Call API")
-    data = await request.json()
     try:
         result = await run_amazon_flow(
-            email=data.get("email"),
-            password=data.get("password"),
-            mode=data.get("headless")
+            email=data.email,
+            password=data.password,
+            mode=data.headless
         )
         return {"status": "success", "details": result}
     except Exception as e:
-        logging.error(f"Error en la simulación: {str(e)}")
+        logging.error(f"Simulation Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Purchase simulation error")
+        
