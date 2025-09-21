@@ -1,0 +1,69 @@
+2025-09-21 12:54:11,020 - INFO - Calling API ...
+2025-09-21 12:54:11,020 - INFO - Starting Amazon flow for pythontest881@gmail.com in False headless mode
+2025-09-21 12:54:48,033 - ERROR - Simulation Error: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("link", name="Televisión y Video").nth(1)
+
+2025-09-21 12:54:48,121 - INFO - Calling API ...
+2025-09-21 12:54:48,121 - INFO - Starting Amazon flow for pythontest881@gmail.com in True headless mode
+2025-09-21 12:54:52,508 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:55:03,030 - INFO - 'No, gracias' button not present
+2025-09-21 12:55:03,864 - INFO - Product added to the cart
+2025-09-21 12:55:05,800 - INFO - Access to payment page successfully
+2025-09-21 12:55:06,441 - INFO - Flow fully completed
+2025-09-21 12:55:23,516 - INFO - Calling API ...
+2025-09-21 12:55:23,516 - INFO - Starting Amazon flow for pythontest881@gmail.com in False headless mode
+2025-09-21 12:55:25,224 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:55:33,515 - INFO - 'No, gracias' button not present
+2025-09-21 12:55:34,413 - INFO - Product added to the cart
+2025-09-21 12:55:37,365 - INFO - Access to payment page successfully
+2025-09-21 12:55:38,150 - INFO - Flow fully completed
+2025-09-21 12:55:38,412 - INFO - Calling API ...
+2025-09-21 12:55:38,412 - INFO - Starting Amazon flow for pythontest881@gmail.com in True headless mode
+2025-09-21 12:55:40,022 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:55:48,151 - INFO - 'No, gracias' button not present
+2025-09-21 12:55:48,962 - INFO - Product added to the cart
+2025-09-21 12:55:50,745 - INFO - Access to payment page successfully
+2025-09-21 12:55:51,833 - INFO - Flow fully completed
+2025-09-21 12:56:09,879 - INFO - Calling API ...
+2025-09-21 12:56:09,879 - INFO - Starting Amazon flow for pythontest881@gmail.com in False headless mode
+2025-09-21 12:56:11,373 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:56:19,576 - INFO - 'No, gracias' button not present
+2025-09-21 12:56:20,491 - INFO - Product added to the cart
+2025-09-21 12:56:22,596 - INFO - Access to payment page successfully
+2025-09-21 12:56:23,374 - INFO - Flow fully completed
+2025-09-21 12:56:23,666 - INFO - Calling API ...
+2025-09-21 12:56:23,666 - INFO - Starting Amazon flow for pythontest881@gmail.com in True headless mode
+2025-09-21 12:56:25,321 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:56:33,803 - INFO - 'No, gracias' button not present
+2025-09-21 12:56:34,666 - INFO - Product added to the cart
+2025-09-21 12:56:36,610 - INFO - Access to payment page successfully
+2025-09-21 12:56:37,225 - INFO - Flow fully completed
+2025-09-21 12:56:59,571 - INFO - Calling API ...
+2025-09-21 12:56:59,571 - INFO - Starting Amazon flow for pythontest881@gmail.com in False headless mode
+2025-09-21 12:57:01,323 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:57:09,798 - INFO - 'No, gracias' button not present
+2025-09-21 12:57:10,664 - INFO - Product added to the cart
+2025-09-21 12:57:12,565 - INFO - Access to payment page successfully
+2025-09-21 12:57:13,470 - INFO - Flow fully completed
+2025-09-21 12:57:13,751 - INFO - Calling API ...
+2025-09-21 12:57:13,751 - INFO - Starting Amazon flow for pythontest881@gmail.com in True headless mode
+2025-09-21 12:57:15,504 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:57:24,439 - INFO - 'No, gracias' button not present
+2025-09-21 12:57:25,257 - INFO - Product added to the cart
+2025-09-21 12:57:27,077 - INFO - Access to payment page successfully
+2025-09-21 12:57:27,726 - INFO - Flow fully completed
+2025-09-21 12:57:46,042 - INFO - Calling API ...
+2025-09-21 12:57:46,042 - INFO - Starting Amazon flow for pythontest881@gmail.com in False headless mode
+2025-09-21 12:57:47,544 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:57:56,139 - INFO - 'No, gracias' button not present
+2025-09-21 12:57:56,847 - INFO - Product added to the cart
+2025-09-21 12:57:59,302 - INFO - Access to payment page successfully
+2025-09-21 12:57:59,950 - INFO - Flow fully completed
+2025-09-21 12:58:00,210 - INFO - Calling API ...
+2025-09-21 12:58:00,210 - INFO - Starting Amazon flow for pythontest881@gmail.com in True headless mode
+2025-09-21 12:58:02,073 - INFO - 'Continuar a Compras' button not present
+2025-09-21 12:58:10,333 - INFO - 'No, gracias' button not present
+2025-09-21 12:58:11,126 - INFO - Product added to the cart
+2025-09-21 12:58:14,006 - INFO - Access to payment page successfully
+2025-09-21 12:58:14,665 - INFO - Flow fully completed
