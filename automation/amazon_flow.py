@@ -1,5 +1,4 @@
 # Amazon flow to buy a TV
-from playwright.async_api import async_playwright
 from automation.amazon_bot import AmazonBot
 import logging
 
@@ -12,4 +11,4 @@ async def run_amazon_flow(email: str, password: str, mode: bool):
         checkout_amazon_text = await bot.checkout_amazon()
         logging.info("Flow fully completed")
         
-        return checkout_amazon_text
+        return checkout_amazon_text # Checkout text whether the bot reaches the payment page or not
