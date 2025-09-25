@@ -27,8 +27,8 @@ Initial project setup, configs and installation of dependencies:
 
 #### 1. Clone this repository
 ```bash
-git clone https://github.com/tu-usuario/amazon-playwright-automation.git
-cd amazon-playwright-automation
+git clone https://github.com/JorgeLore/test-amazon-flow
+cd test-amazon-flow
 ```
 #### 2. Create and activate a virtual enviroment
 ```bash
@@ -51,7 +51,7 @@ To deploy this project run:
 
 #### 1. Start the API
 ```bash
-uvicorn app.main:app
+uvicorn api.main:app
 ```
 #### 2. Execute pytest file (test_amazon_flow.py) with:
 ```bash
